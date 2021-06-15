@@ -6,6 +6,17 @@
 #include <string>
 using namespace std;
 
+LIB *addBook(LIB *lib, const int count_books);
+void show_Boks(LIB *str, const int counBooks);
+void find_Autor(LIB *str, const int countBooks);
+void find_Name_Book(LIB *str, const int countBooks);
+void sort_Book_Name(LIB *str, const int countBooks);
+void sort_Aut_name(LIB *str, const int countBooks);
+void BOOKS(LIB *str);
+void Ops();
+
+#define SIZE 3
+
 struct LIB
 {
     string name;
@@ -34,7 +45,6 @@ void BOOKS(LIB *str)
     
     
 }
-
 
 void Book_abstract(string str)
 {

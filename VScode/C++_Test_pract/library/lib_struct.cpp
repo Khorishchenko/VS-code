@@ -1,19 +1,6 @@
 #include "lib.h"
 using namespace std;
 
-#define SIZE 3
-
-
-LIB *addBook(LIB *lib, const int count_books);
-void show_Boks(LIB *str, const int counBooks);
-void find_Autor(LIB *str, const int countBooks);
-void find_Name_Book(LIB *str, const int countBooks);
-void sort_Book_Name(LIB *str, const int countBooks);
-void sort_Aut_name(LIB *str, const int countBooks);
-void BOOKS(LIB *str);
-void Ops();
-
-
 int main()
 {
     setlocale(LC_ALL, "rus");
@@ -24,7 +11,6 @@ int main()
     BOOKS(Library);
     show_Boks(Library, SIZE);
 
-    
     int YesOrNot = 0;
     int countBooks = 0;
 
@@ -76,10 +62,8 @@ int main()
             default:
                 break;
         }
-
         if (Yes_orNot == 0)
             break;
-
     }
 
     delete [] library;
@@ -116,7 +100,7 @@ void show_Boks(LIB *str, const int count_books){
 }
 
 void find_Autor(LIB *str, const int countBooks){
-    bool book;
+    bool book = true;
     cout << "\nWhat do you want find Author: "; string nameAutor; getline(cin, nameAutor);
     for (int i = 0; i < countBooks; i++){
         if (str[i].author == nameAutor){
@@ -125,15 +109,15 @@ void find_Autor(LIB *str, const int countBooks){
             cout << "AUTHOR: " << str[i].author << endl;
             cout << "PUBL: " << str[i].publishing << endl;
             cout << "GENER: " << str[i].genre << endl;
-            book = true;
+            book = false;
         }
     }
-    if (book != true)
+    if (book)
         cout << "\nNot find Author this Book " << endl;
 }
 
 void find_Name_Book(LIB *str, const int countBooks){
-    int author = 0;
+    bool book = true;
     cout << "What do you want find Name Book: "; string nameBook; getline(cin, nameBook);
     for (int i = 0; i < countBooks; i++){
         if (str[i].name == nameBook){
@@ -142,12 +126,10 @@ void find_Name_Book(LIB *str, const int countBooks){
             cout << "AUTHOR: " << str[i].author << endl;
             cout << "PUBL: " << str[i].publishing << endl;
             cout << "GENER: " << str[i].genre << endl;
+            book = false;
         }
-        else 
-            author++;
-
     }
-    if (author != 0)
+    if (book)
         cout << "\nNot find Author this Book " << endl;
 }
 
@@ -160,7 +142,6 @@ void sort_Book_Name(LIB *str, const int countBooks){
     }
     show_Boks(str, countBooks);
 }
-
 
 void sort_Aut_name(LIB *str, const int countBooks){
     for (int i = 0; i < countBooks; i++){
