@@ -3,7 +3,7 @@ using namespace std;
 
 class Titan
 {
-    private:
+    //private:
         string name;
     public:
         void showName_Titan(string name);
@@ -18,5 +18,6 @@ void Titan :: showName_Titan(string name)
 
 int main(){
     Titan b;
+   
     b.showName_Titan("mark");
 }
