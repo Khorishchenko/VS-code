@@ -18,8 +18,8 @@ int main()
      cout << myUnion.name1 << endl; // снова обращаемся к name1
 }
 
-https://www.youtube.com/watch?v=6IsGVvNbyOo&t=106s&ab_channel=%23SimpleCode
-https://ru.stackoverflow.com/questions/623534/%D0%97%D0%B0%D1%87%D0%B5%D0%BC-%D0%BD%D1%83%D0%B6%D0%BD%D0%BE-%D0%BE%D0%B1%D1%8A%D0%B5%D0%B4%D0%B8%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5-union
+// https://www.youtube.com/watch?v=6IsGVvNbyOo&t=106s&ab_channel=%23SimpleCode
+// https://ru.stackoverflow.com/questions/623534/%D0%97%D0%B0%D1%87%D0%B5%D0%BC-%D0%BD%D1%83%D0%B6%D0%BD%D0%BE-%D0%BE%D0%B1%D1%8A%D0%B5%D0%B4%D0%B8%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5-union
 
 
 

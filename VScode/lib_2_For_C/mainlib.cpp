@@ -1,5 +1,5 @@
 #include <iostream>
-#include "libstr.h"
+#include "lib.h"
 using namespace std;
 
 int main()
