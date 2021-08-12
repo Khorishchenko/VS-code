@@ -1,6 +1,7 @@
 #include "Point3D.h"
 #include "Vector3D.h"
 
+ // c) Переделайте свой ответ из задания b, используя 5 отдельных файлов: Point3D.h, Point3D.cpp, Vector3D.h, Vector3D.cpp и main.cpp.
 int main()
 {
 	Point3D p(3.0, 4.0, 5.0);
