@@ -67,7 +67,7 @@ public:
 	}
 
     Something operator +() const{
-        return Something(+m_a);
+        return Something(m_a);
     }
 
 	double getA() { return m_a; }
