@@ -27,7 +27,7 @@ class FixedPoint
         std::int8_t   value_2;
 
     public:
-        FixedPoint(std::int16_t val_1 = 0, std::int8_t  val_2 = 0) 
+        FixedPoint(std::int16_t val_1 = 0, std::int8_t val_2 = 0) 
             : value_1(val_1), value_2(val_2)
             {
                 assert(value_2 < 99 || value_2 < -99);
